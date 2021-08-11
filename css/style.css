@@ -1,0 +1,81 @@
+:root{
+    --mf:;
+    --sf:;
+    --hc:;
+    --pc:;
+    --smal1:;
+    --mc:#ffff;
+}
+/*==========
+common css start
+============*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.full-wrapper{
+    width: 100%;
+
+}
+/*==========
+common css end
+============*/
+/*==========
+nav-section start
+============*/
+nav{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+}
+nav .navber{
+    height: 90px;
+    display: flex;
+
+}
+nav .navber .logo{
+    width: 100px;
+    height: 100%;
+    background:rgb(172, 172, 184);
+    display: flex;
+    align-items: center;
+}
+nav .navber .logo img{
+    width: 100%;
+}
+nav .navber .nav-list{
+    width: 950px;
+    height: 100%;
+    background: yellow;
+}
+nav .navber .nav-list ul{
+    display: flex;
+    align-items:center;
+    height: 90px;
+    justify-content: flex-end;
+}
+nav .navber .nav-list ul li{
+
+}
+nav .navber .nav-list ul li a{
+    text-transform:uppercase;
+    color:var(--mc);
+}
+nav .navber .socail-icon{
+    width: 120px;
+    height:100%;
+    background: wheat;
+}
