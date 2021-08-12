@@ -2,9 +2,10 @@
     --mf:'Roboto', sans-serif;
     --sf:'Roboto Slab', serif;
     --hc:#28b8d8;
-    --pc:#feffff;
+    --pc:#666666;
     --smal1:;
     --mc:#ffff;
+    --hdc:#444444;
 }
 /*==========
 common css start
@@ -150,9 +151,88 @@ hero-section start
     padding:0 24px;
 }
 #banner-bg .banner p{
-    color: var(--pc);
+    color: var(--mc);
     font-size: 14px;
     font-family: var(--sf);
     font-weight: 300;
     text-transform: capitalize;
 }
+/*============
+ hero-section end
+ ========== */
+ /*============
+ service-section start
+ ==========*/
+ #service-bg{
+     width: 100%;
+     height: 547px;
+     padding:80px 0;
+ }
+ #service-bg .service{
+     height: 100%;
+ }
+ #service-bg .service .service-heading{
+     text-align: center;
+     height: 190px;
+ }
+ #service-bg .service .service-heading h2{
+     font-size: 300px;
+     color:var(--hdc);
+     font-size:30px;
+     font-weight: 300;
+     font-family:var(--sf);
+ }
+ #service-bg .service .service-heading p{
+     font-family: var(--mf);
+     color:var(--pc);
+     font-size: 14px;
+     font-weight: 400;
+     padding-top:25px;
+ }
+ #service-bg .service .service-heading .titel{
+     padding-top: 78px;
+ }
+ #service-bg .service .service-heading .titel h4{
+     text-transform: uppercase;
+     font-size: 18px;
+     color: var(--hdc);
+     font-family:var(--mf);
+     font-weight:600;
+ }
+ #service-bg .service .service-content{
+     display:flex;
+     height: 357px;
+     justify-content: space-between;
+ }
+ #service-bg .service .service-content figure{
+     width: 370px;
+     text-align: center;
+     padding: 16px;
+     box-sizing: border-box;
+     border: 1px solid #e3e3e3;
+ }
+ #service-bg .service .service-content figure img{
+     width: 100%;
+ }
+ #service-bg .service .service-content figure figcaption{
+     width: 100%;
+ }
+ #service-bg .service .service-content figure figcaption h3{
+     font-family: var(--sf);
+     font-size: 17px;
+     color:var(--hdc);
+     text-transform: capitalize;
+     padding-top: 25px;
+     padding-bottom:18px;
+ }
+ #service-bg .service .service-content figure figcaption p{
+     font-size: 14px;
+     line-height: 22px;
+     color: var(--pc);
+     font-family:var(--mf);
+     font-weight:400;
+     padding:  0 18px;
+ }
+ /*============= 
+ serviece-section and
+ ============*/
