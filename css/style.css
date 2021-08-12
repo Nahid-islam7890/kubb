@@ -2,7 +2,7 @@
     --mf:'Roboto', sans-serif;
     --sf:'Roboto Slab', serif;
     --hc:#28b8d8;
-    --pc:;
+    --pc:#feffff;
     --smal1:;
     --mc:#ffff;
 }
@@ -41,6 +41,7 @@ nav{
     width: 100%;
     height: 90px;
     background: rgba(0, 0, 0, 0.44);
+    z-index: 99999;
 }
 nav .navber{
     height: 90px;
@@ -107,8 +108,51 @@ nav .navber .socail-icon::after{
 nav .navber .socail-icon a{
     margin-left: 18px;
     color:var(--mc);
+    transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
 }
-nav .navber .socail-icon a:last-child{
-    
-    
+nav .navber .socail-icon a:hover{
+    color: var(--hc);
+}
+/*==========
+nav-section end
+============*/
+/*==========
+hero-section start
+============*/
+#banner-bg{
+    width: 100%;
+    height: 700px;
+    background: url(../imges/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#banner-bg .banner{
+    text-align: center;
+}
+#banner-bg .banner h1{
+    padding-top: 330px;
+    font-size: 50px;
+    font-family: var(--mf);
+    font-weight: bold;
+    text-transform:uppercase;
+    color:var(--mc);
+}
+#banner-bg .banner h3{
+    font-size: 40px;
+    font-weight: 300;
+    font-family: var(--sf);
+    color: var(--mc);
+    text-transform:uppercase;
+    padding:0 24px;
+}
+#banner-bg .banner p{
+    color: var(--pc);
+    font-size: 14px;
+    font-family: var(--sf);
+    font-weight: 300;
+    text-transform: capitalize;
 }
