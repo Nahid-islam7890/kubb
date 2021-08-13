@@ -634,3 +634,83 @@ hero-section start
 /*===========
 about-section 
 ========== */
+/*===========
+footer-section start
+========== */
+#footer-bg{
+    width:100%;
+    height: 222px;
+    padding:80px 0;
+    background: #373737;
+}
+#footer-bg .footer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-bg .footer .footer-item{
+    width: 24%;
+    height: 100%;
+}
+#footer-bg .footer .footer-item h4{
+    font-size: 16px;
+    font-family: var(--mf);
+    color: #f0f0f0;
+    padding-bottom: 24px;
+    font-weight:600;
+    text-transform:uppercase;
+}
+#footer-bg .footer .footer-item p{
+    font-family: var(--mf);
+    font-size: 14px;
+    font-weight:400;
+    color:#cacaca;
+    padding-bottom:15px;
+}
+#footer-bg .footer .footer-item p span{
+    display: block;
+    font-size: 12px;
+    color: #929292;
+    font-weight: 400;
+    padding-top: 5px;
+}
+#footer-bg .footer .footer-item .footer-content{
+    display: flex;
+    height: 38px;
+    width: 100%;
+    padding-bottom: 12px;
+}
+#footer-bg .footer .footer-item .footer-content .location{
+    width: 26px;
+    box-sizing: border-box;
+    height: 100%;
+
+}
+#footer-bg .footer .footer-item .footer-content .location i{
+    color: #f9f9f9;
+
+}
+#footer-bg .footer .footer-item .footer-content .location .address{
+    width: 178px;
+    height: 26px;
+}
+#footer-bg .footer .footer-item .footer-content .location .address p{
+    
+}
+#copy-section{
+    height: 90px;
+    width: 100%;
+    background: #333333;
+}
+#copy-section .copy{
+    display: flex;
+    align-items: center;
+    
+}
+#copy-section .copy p{
+    line-height: 90px;
+    font-family: var(--mf);
+    font-size: 14px;
+    color: #cacaca;
+}
+/*============footer and========= */
