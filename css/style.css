@@ -35,6 +35,106 @@ img{
 /*==========
 common css end
 ============*/
+/* proloder */
+.preloder{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background:#333333;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloder-one{width: 100px;height: 100px;background: blue;position: relative;overflow: hidden;}
+.preloder span{
+
+/* position: absolute; */
+
+width: 100%;
+
+height: 6px;
+
+position: absolute;
+}
+.preloder span:nth-child(1){
+    background: white;
+    left:-100%;
+    top: 0;
+    animation-name: box1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes box1{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.preloder span:nth-child(2){
+    width: 100%;
+    height: 6px;
+    bottom: 0;
+    background: yellow;
+    right: -100%;
+    animation-name: box2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes box2{
+    0%{
+        right:-100%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+.preloder span:nth-child(3){
+top: -100%;
+right: 0;
+width: 6px;
+height: 100%;
+   background: red;
+   animation-name: box3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes box3{
+    0%{
+        top:-100%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+.preloder span:nth-child(4){
+
+    width: 6px;
+    bottom: -100%;
+    height: 100%;
+    left: 0;
+    background: gray;
+    animation-name: box4;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes box4{
+    0%{
+        bottom:-100%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
 /*==========
 nav-section start
 ============*/
@@ -42,8 +142,17 @@ nav{
     position: absolute;
     width: 100%;
     height: 90px;
-    background: rgba(0, 0, 0, 0.44);
-    z-index: 99999;
+    background: #00000070;
+    z-index: 999;
+    transition: all linear .5s;
+    -moz-transition: all linear .5s;
+}
+.bg{
+    position: fixed;
+    top:0;
+    background: rgb(19, 0, 0);
+    left: 0;
+    
 }
 nav .navber{
     height: 90px;
@@ -712,5 +821,20 @@ footer-section start
     font-family: var(--mf);
     font-size: 14px;
     color: #cacaca;
+}
+.bottom-top{
+    width: 50px;
+    height: 50px;
+    background: #744fa0;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    display: none;
 }
 /*============footer and========= */
